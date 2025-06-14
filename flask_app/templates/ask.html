@@ -1,0 +1,11 @@
+<!doctype html>
+<title>Ask Questions</title>
+<h2>Ask questions about: {{ pdf }}</h2>
+<form method=post>
+  <input type=text name=question placeholder="Type your question" required>
+  <input type=submit value=Ask>
+</form>
+{% if question %}
+  <h3>Q: {{ question }}</h3>
+  <p><b>Answer:</b> {{ answer }}</p>
+{% endif %}
