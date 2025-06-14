@@ -4,11 +4,14 @@
 
 Since the initial version completely ignored this data, I improved the system by building `chatpdf.py`, which integrates **image captioning (using BLIP)** and **OCR (using Tesseract)**. This allowed the system to extract and understand information from figures and diagrams, enabling more complete and accurate answers. This project leverages **LangChain**, **Hugging Face models**, **OCR**, and **Image recognition** to enhance document understanding.
 
----
+## Updates
+
+#### June 15th: Added Flask web app (`flask_app/app.py`) with a basic UI for the multimodal PDF QA system. Demo run successful; UI improvements pending.
+
 
 ## Features
 
-| Feature                           | `bot.py`             | `chatpdf.py` (Enhanced Version) |
+| Feature                          | `bot.py`             | `chatpdf.py` (Enhanced Version)  |
 |----------------------------------|----------------------|----------------------------------|
 | Text-based PDF QA                | ✅                   | ✅                               |
 | Handles multi-page PDFs          | ✅                   | ✅                               |
@@ -37,6 +40,7 @@ Since the initial version completely ignored this data, I improved the system by
   - Embeds both textual and image-based content.
 - Allows richer QA from diagrams, graphs, scanned pages, and mixed-content PDFs.
 
+###
 ---
 
 ## 🖼️ Sample Use Case
@@ -81,3 +85,4 @@ sudo apt-get install tesseract-ocr
 - Add GUI using Streamlit or Flask
 - Support for table parsing using pdfplumber
 - Multilingual OCR support
+- Improve UI
